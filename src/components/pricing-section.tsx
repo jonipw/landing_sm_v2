@@ -21,7 +21,7 @@ const plans = [
   },
   {
     name: "Pro (soon)",
-    price: "49",
+    price: "150",
     period: "per bulan",
     description: "Untuk kebutuhan personal dan keluarga",
     features: [
