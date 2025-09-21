@@ -13,7 +13,7 @@ const plans = [
       "3 undangan per bulan",
       "Template dasar",
       "Maksimal 50 tamu",
-      "Branding InviteKu",
+      "Branding Sweet Memory",
       "Support email",
     ],
     cta: "Mulai Gratis",

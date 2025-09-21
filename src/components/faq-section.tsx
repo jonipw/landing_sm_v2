@@ -1,11 +1,11 @@
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 const faqs = [
-  {
-    question: "Apakah saya bisa menggunakan InviteKu secara gratis?",
-    answer:
-      "Ya! Kami menyediakan paket gratis yang memungkinkan Anda membuat hingga 3 undangan per bulan dengan template dasar dan maksimal 50 tamu. Anda bisa upgrade kapan saja jika membutuhkan fitur lebih lengkap.",
-  },
   {
     question: "Bagaimana cara membagikan undangan digital?",
     answer:
@@ -41,32 +41,43 @@ const faqs = [
     answer:
       "Fitur custom domain tersedia untuk pengguna paket Pro dan Business. Anda bisa menggunakan domain sendiri untuk undangan yang lebih profesional.",
   },
-]
+];
 
 export function FAQSection() {
   return (
     <section id="faq" className="py-20">
       <div className="container">
         <div className="text-center space-y-4 mb-16">
-          <h2 className="text-3xl lg:text-4xl font-bold text-balance">Pertanyaan yang Sering Diajukan</h2>
+          <h2 className="text-3xl lg:text-4xl font-bold text-balance">
+            Pertanyaan yang Sering Diajukan
+          </h2>
           <p className="text-lg text-muted-foreground text-pretty max-w-2xl mx-auto">
-            Temukan jawaban untuk pertanyaan umum tentang layanan undangan digital kami
+            Temukan jawaban untuk pertanyaan umum tentang layanan undangan
+            digital kami
           </p>
         </div>
 
         <div className="max-w-3xl mx-auto">
           <Accordion type="single" collapsible className="space-y-4">
             {faqs.map((faq, index) => (
-              <AccordionItem key={index} value={`item-${index}`} className="border rounded-lg px-6">
+              <AccordionItem
+                key={index}
+                value={`item-${index}`}
+                className="border rounded-lg px-6"
+              >
                 <AccordionTrigger className="text-left hover:no-underline py-6">
-                  <span className="font-medium text-pretty">{faq.question}</span>
+                  <span className="font-medium text-pretty">
+                    {faq.question}
+                  </span>
                 </AccordionTrigger>
-                <AccordionContent className="pb-6 text-muted-foreground text-pretty">{faq.answer}</AccordionContent>
+                <AccordionContent className="pb-6 text-muted-foreground text-pretty">
+                  {faq.answer}
+                </AccordionContent>
               </AccordionItem>
             ))}
           </Accordion>
         </div>
       </div>
     </section>
-  )
+  );
 }
