@@ -17,9 +17,8 @@ import {
 const features = [
   {
     icon: Palette,
-    title: "Template Beragam",
-    description:
-      "Pilih dari 100+ template profesional untuk berbagai jenis acara",
+    title: "Kustomasi Undangan",
+    description: "Sesuaikan setiap komponen undangan sesuai tema dan gaya Anda",
   },
   {
     icon: Smartphone,
@@ -37,7 +36,7 @@ const features = [
     icon: Clock,
     title: "Buat dalam Menit",
     description:
-      "Editor drag-and-drop yang intuitif untuk membuat undangan dengan cepat",
+      "Editor yang mudah dioperasikan untuk membuat undangan dengan cepat",
   },
   {
     icon: Users,
@@ -47,8 +46,7 @@ const features = [
   {
     icon: BarChart3,
     title: "Analytics Real-time",
-    description:
-      "Pantau berapa banyak orang yang melihat dan merespons undangan Anda",
+    description: "Pantau berapa banyak orang yang merespons undangan Anda",
   },
   {
     icon: Heart,
@@ -78,23 +76,31 @@ export function FeaturesSection() {
         </ScrollAnimation>
 
         <StaggeredAnimation
-          className="grid md:grid-cols-2 lg:grid-cols-4 gap-6"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4 lg:gap-5"
           staggerDelay={0.1}
         >
           {features.map((feature, index) => (
             <Card
               key={index}
-              className="p-6 text-center hover:shadow-lg transition-all duration-300 group"
+              className="p-4 md:p-5 lg:p-6 text-center md:text-center hover:shadow-lg dark:hover:shadow-primary/10 hover:scale-105 transition-all duration-300 group cursor-pointer"
             >
-              <div className="mb-4 flex justify-center">
-                <div className="p-3 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors">
-                  <feature.icon className="h-6 w-6 text-primary" />
+              {/* Mobile: Horizontal layout with icon on left */}
+              <div className="flex md:block items-start md:items-center gap-3 md:gap-0">
+                <div className="flex-shrink-0 md:mb-4 md:flex md:justify-center">
+                  <div className="p-2 md:p-3 rounded-lg bg-primary/10 group-hover:bg-primary/20 dark:group-hover:bg-primary/30 transition-colors">
+                    <feature.icon className="h-5 w-5 md:h-6 md:w-6 text-primary" />
+                  </div>
+                </div>
+
+                <div className="flex-1 md:flex-none text-left md:text-center">
+                  <h3 className="font-semibold mb-1 md:mb-2 text-sm md:text-base">
+                    {feature.title}
+                  </h3>
+                  <p className="text-xs md:text-sm text-muted-foreground text-pretty">
+                    {feature.description}
+                  </p>
                 </div>
               </div>
-              <h3 className="font-semibold mb-2">{feature.title}</h3>
-              <p className="text-sm text-muted-foreground text-pretty">
-                {feature.description}
-              </p>
             </Card>
           ))}
         </StaggeredAnimation>

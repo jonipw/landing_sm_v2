@@ -9,7 +9,7 @@ const faqs = [
   {
     question: "Bagaimana cara membagikan undangan digital?",
     answer:
-      "Setelah undangan selesai dibuat, Anda akan mendapatkan link unik yang bisa dibagikan melalui WhatsApp, email, media sosial, atau platform lainnya. Tamu cukup mengklik link untuk melihat undangan.",
+      "Setelah undangan selesai dibuat, Anda akan mendapatkan link unik atau template siap kirim yang bisa dibagikan melalui WhatsApp, email, media sosial, atau platform lainnya. Penerima cukup mengklik link untuk melihat undangan.",
   },
   {
     question: "Apakah undangan bisa diakses tanpa internet?",
@@ -23,8 +23,7 @@ const faqs = [
   },
   {
     question: "Apakah ada batasan jumlah tamu?",
-    answer:
-      "Batasan tamu tergantung paket yang Anda pilih. Paket Gratis maksimal 50 tamu, Pro maksimal 500 tamu, dan Business unlimited tamu.",
+    answer: "Batasan tamu tergantung paket yang Anda pilih. ",
   },
   {
     question: "Bagaimana dengan keamanan data tamu?",
@@ -34,12 +33,12 @@ const faqs = [
   {
     question: "Apakah tersedia customer support?",
     answer:
-      "Ya, kami menyediakan support melalui email untuk semua pengguna. Pengguna Pro dan Business mendapatkan priority support dengan response time lebih cepat.",
+      "Ya, kami menyediakan support melalui WA untuk semua pengguna. Pengguna Pro dan Kustom mendapatkan priority support dengan response time lebih cepat.",
   },
   {
     question: "Bisakah saya menggunakan domain sendiri?",
     answer:
-      "Fitur custom domain tersedia untuk pengguna paket Pro dan Business. Anda bisa menggunakan domain sendiri untuk undangan yang lebih profesional.",
+      "Fitur custom domain tersedia untuk pengguna paket Pro dan Kustom. Anda bisa menggunakan domain sendiri untuk undangan yang lebih profesional.",
   },
 ];
 

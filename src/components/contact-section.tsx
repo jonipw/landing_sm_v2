@@ -38,7 +38,7 @@ export function ContactSection() {
                 </div>
               </div>
 
-              <div className="flex items-start space-x-4">
+              {/* <div className="flex items-start space-x-4">
                 <div className="p-2 bg-primary/10 rounded-lg">
                   <Phone className="h-5 w-5 text-primary" />
                 </div>
@@ -46,7 +46,7 @@ export function ContactSection() {
                   <h4 className="font-medium">Telepon</h4>
                   <p className="text-muted-foreground">+62 0000000</p>
                 </div>
-              </div>
+              </div> */}
 
               <div className="flex items-start space-x-4">
                 <div className="p-2 bg-primary/10 rounded-lg">
@@ -58,7 +58,7 @@ export function ContactSection() {
                 </div>
               </div>
 
-              <div className="flex items-start space-x-4">
+              {/* <div className="flex items-start space-x-4">
                 <div className="p-2 bg-primary/10 rounded-lg">
                   <MapPin className="h-5 w-5 text-primary" />
                 </div>
@@ -72,7 +72,7 @@ export function ContactSection() {
                     Indonesia
                   </p>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
 

@@ -9,51 +9,55 @@ import {
 
 const plans = [
   {
-    name: "Basic (soon)",
-    price: "100",
-    period: "selamanya",
+    name: "Standar (soon)",
+    price: "150",
+    period: "1 bulan",
     description: "Cocok untuk mencoba fitur dasar",
     features: [
-      "3 undangan per bulan",
-      "Template dasar",
+      "500 undangan",
       "Maksimal 50 tamu",
+      "Galeri Foto",
+      "Maps Lokasi",
+      "Template dasar",
+      "Template text WA",
+      "Analytics lengkap",
       "Branding Sweet Memory",
-      "Support email",
     ],
-    cta: "Mulai Gratis",
+    cta: "Mulai Standar",
     popular: false,
   },
   {
-    name: "Pro (soon)",
-    price: "150",
-    period: "per bulan",
-    description: "Untuk kebutuhan personal dan keluarga",
+    name: "Standar",
+    price: "250",
+    period: "3 bulan",
+    description: "Untuk kebutuhan cepat, personal maupun bisnis",
     features: [
       "Undangan unlimited",
-      "Semua template premium",
+      "Unlimited tamu",
+      "Maps Lokasi",
+      "Google Calendar Integration",
+      "Galeri Foto",
       "Maksimal 500 tamu",
-      "Tanpa branding",
+      "Template text WA",
       "Analytics lengkap",
-      "Custom domain",
       "Priority support",
+      "Branding Sweet Memory",
     ],
-    cta: "Pilih Pro",
+    cta: "Pilih Standar",
     popular: true,
   },
   {
     name: "Custom",
-    price: "250",
+    price: "300++",
     period: "6 bulan",
-    description: "Untuk event organizer dan bisnis",
+    description: "Untuk kebutuhan personal dan bisnis",
     features: [
+      "Menyesuaikan kebutuhan",
       "Semua fitur Pro",
-      "Unlimited tamu",
-      "White label solution",
-      "API access",
-      "Team collaboration",
-      "Advanced analytics",
-      "Dedicated support",
-      "Custom integrations",
+      "Kustom Subdomain atau domain",
+      "Kustom fitur",
+      "Kustom desain",
+      "Kustom Text WA/Undangan",
     ],
     cta: "Pilih Custom",
     popular: false,
@@ -80,8 +84,10 @@ export function PricingSection() {
           {plans.map((plan, index) => (
             <Card
               key={index}
-              className={`p-8 relative ${
-                plan.popular ? "border-primary shadow-lg scale-105" : ""
+              className={`p-8 relative transition-all duration-300 hover:scale-105 hover:shadow-xl dark:hover:shadow-primary/10 cursor-pointer ${
+                plan.popular
+                  ? "border-primary shadow-lg scale-105 dark:shadow-primary/20"
+                  : ""
               }`}
             >
               {plan.popular && (
@@ -120,7 +126,7 @@ export function PricingSection() {
               </div>
 
               <Button
-                className="w-full"
+                className="w-full hover:scale-105 transition-transform"
                 variant={plan.popular ? "default" : "outline"}
                 size="lg"
               >
@@ -132,7 +138,7 @@ export function PricingSection() {
 
         <ScrollAnimation delay={0.6} className="text-center mt-12">
           <p className="text-sm text-muted-foreground">
-            Semua paket termasuk SSL gratis, backup otomatis, dan uptime 99.9%
+            Semua paket termasuk SSL gratis dan uptime 99.9%
           </p>
         </ScrollAnimation>
       </div>

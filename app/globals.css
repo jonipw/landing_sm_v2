@@ -146,3 +146,30 @@ html {
     @apply w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
 }
+
+/* Custom hover effects for dark mode */
+@layer components {
+  .hover-glow {
+    @apply transition-all duration-300;
+  }
+
+  .hover-glow:hover {
+    @apply shadow-lg;
+  }
+
+  .dark .hover-glow:hover {
+    @apply shadow-primary/20;
+  }
+
+  .card-interactive {
+    @apply transition-all duration-300 cursor-pointer;
+  }
+
+  .card-interactive:hover {
+    @apply scale-105 shadow-lg;
+  }
+
+  .dark .card-interactive:hover {
+    @apply shadow-primary/10;
+  }
+}

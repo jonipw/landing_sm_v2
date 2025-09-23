@@ -5,6 +5,7 @@ import {
   ScrollAnimation,
   StaggeredAnimation,
 } from "@/components/scroll-animation";
+import { HoverScale } from "@/components/micro-animations";
 
 export function HeroSection() {
   return (
@@ -26,18 +27,25 @@ export function HeroSection() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="text-base">
-                Mulai Membuat Gratis
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
-              <Button
-                variant="outline"
-                size="lg"
-                className="text-base bg-transparent"
-              >
-                <Play className="mr-2 h-4 w-4" />
-                Lihat Demo
-              </Button>
+              <HoverScale>
+                <Button
+                  size="lg"
+                  className="text-base hover:bg-primary/90 dark:hover:bg-primary/90 transition-colors"
+                >
+                  Lihat Paket Harga
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Button>
+              </HoverScale>
+              <HoverScale>
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="text-base text-black dark:text-white bg-transparent"
+                >
+                  <Play className="mr-2 h-4 w-4" />
+                  Lihat Demo
+                </Button>
+              </HoverScale>
             </div>
 
             <div className="flex items-center space-x-6 text-sm text-muted-foreground">
@@ -50,19 +58,19 @@ export function HeroSection() {
                     />
                   ))}
                 </div>
-                <span>4.9/5 dari 2,500+ pengguna</span>
+                <span>4.9/5 lebih dari 2,500+ penerima undangan</span>
               </div>
             </div>
           </StaggeredAnimation>
 
           <ScrollAnimation direction="right" delay={0.4} className="relative">
-            <Card className="p-8 bg-primary/5 border-primary/20">
+            <Card className="p-8 bg-primary/5 border-primary/20 hover:shadow-lg dark:hover:shadow-primary/10 hover:scale-105 transition-all duration-300">
               <div className="space-y-6">
-                <div className="aspect-[4/3] bg-primary/10 rounded-lg flex items-center justify-center">
+                <div className="aspect-[4/3] bg-primary/10 rounded-lg flex items-center justify-center overflow-hidden">
                   <img
                     src="https://images.unsplash.com/photo-1606800052052-a08af7148866?w=400&h=300&fit=crop&crop=center"
                     alt="Preview undangan digital"
-                    className="rounded-lg shadow-lg w-full h-full object-cover"
+                    className="rounded-lg shadow-lg w-full h-full object-cover hover:scale-110 transition-transform duration-300"
                   />
                 </div>
                 <div className="text-center space-y-2">
@@ -74,7 +82,7 @@ export function HeroSection() {
               </div>
             </Card>
 
-            <div className="absolute -top-4 -right-4 bg-accent text-accent-foreground px-3 py-1 rounded-full text-sm font-medium">
+            <div className="absolute -top-4 -right-4 bg-accent text-accent-foreground px-3 py-1 rounded-full text-sm font-medium animate-pulse">
               ✨ Trending
             </div>
           </ScrollAnimation>

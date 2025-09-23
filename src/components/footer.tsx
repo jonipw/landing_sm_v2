@@ -1,10 +1,18 @@
-import { Heart, Facebook, Instagram, Twitter, Youtube } from "lucide-react";
+import {
+  Heart,
+  Facebook,
+  Instagram,
+  Twitter,
+  Youtube,
+  Mail,
+  Phone,
+} from "lucide-react";
 
 export function Footer() {
   return (
     <footer className="bg-card border-t">
       <div className="container py-12">
-        <div className="grid md:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 gap-8">
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <Heart className="h-6 w-6 text-primary" />
@@ -22,79 +30,25 @@ export function Footer() {
             </div>
           </div>
 
-          <div className="space-y-4">
-            <h4 className="font-semibold">Produk</h4>
+          <div className="space-y-4 text-right">
+            <h4 className="font-semibold">Kontak</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>
-                <a href="#" className="hover:text-primary transition-colors">
-                  Template
+                <a
+                  href="mailto:bliputupro@gmail.com"
+                  className="hover:text-primary transition-colors flex items-center justify-end space-x-2"
+                >
+                  <span>bliputupro@gmail.com</span>
+                  <Mail className="h-4 w-4" />
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-primary transition-colors">
-                  Editor
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-primary transition-colors">
-                  Analytics
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-primary transition-colors">
-                  API
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div className="space-y-4">
-            <h4 className="font-semibold">Dukungan</h4>
-            <ul className="space-y-2 text-sm text-muted-foreground">
-              <li>
-                <a href="#" className="hover:text-primary transition-colors">
-                  Help Center
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-primary transition-colors">
-                  Tutorial
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-primary transition-colors">
-                  Community
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-primary transition-colors">
-                  Status
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div className="space-y-4">
-            <h4 className="font-semibold">Perusahaan</h4>
-            <ul className="space-y-2 text-sm text-muted-foreground">
-              <li>
-                <a href="#" className="hover:text-primary transition-colors">
-                  Tentang Kami
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-primary transition-colors">
-                  Karir
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-primary transition-colors">
-                  Blog
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-primary transition-colors">
-                  Press
+                <a
+                  href="https://wa.me/6285700000000"
+                  className="hover:text-primary transition-colors flex items-center justify-end space-x-2"
+                >
+                  <span>0857xxxxxxxx</span>
+                  <Phone className="h-4 w-4" />
                 </a>
               </li>
             </ul>

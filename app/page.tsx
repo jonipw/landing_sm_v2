@@ -3,6 +3,7 @@ import { HeroSection } from "@/components/hero-section";
 import { PortfolioSection } from "@/components/portfolio-section";
 import { FeaturesSection } from "@/components/features-section";
 import { PricingSection } from "@/components/pricing-section";
+import TestimonialSection from "@/components/testimonial-section";
 import { FAQSection } from "@/components/faq-section";
 import { ContactSection } from "@/components/contact-section";
 import { Footer } from "@/components/footer";
@@ -26,11 +27,14 @@ export default function HomePage() {
           <PricingSection />
         </ScrollAnimation>
         <ScrollAnimation delay={0.3} direction="up">
+          <TestimonialSection />
+        </ScrollAnimation>
+        <ScrollAnimation delay={0.3} direction="up">
           <FAQSection />
         </ScrollAnimation>
-        <ScrollAnimation delay={0.2} direction="up">
+        {/* <ScrollAnimation delay={0.2} direction="up">
           <ContactSection />
-        </ScrollAnimation>
+        </ScrollAnimation> */}
       </main>
       <ScrollAnimation delay={0.1} direction="up">
         <Footer />

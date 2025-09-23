@@ -7,42 +7,21 @@ const portfolioItems = [
     category: "Pernikahan",
     image:
       "https://images.unsplash.com/photo-1469371670807-013ccf25f16a?w=400&h=300&fit=crop&crop=center",
-    tags: ["Elegant", "Modern"],
+    tags: ["Elegan", "Modern"],
   },
   {
-    title: "Undangan Ulang Tahun Anak",
-    category: "Ulang Tahun",
+    title: "Undangan Kegiatan Adat",
+    category: "Kegiatan Adat Bali",
     image:
       "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=400&h=300&fit=crop&crop=center",
-    tags: ["Colorful", "Fun"],
+    tags: ["Tradisional", "Kultur"],
   },
   {
     title: "Undangan Acara Perusahaan",
     category: "Corporate",
     image:
       "https://images.unsplash.com/photo-1511578314322-379afb476865?w=400&h=300&fit=crop&crop=center",
-    tags: ["Professional", "Clean"],
-  },
-  {
-    title: "Undangan Baby Shower",
-    category: "Baby Shower",
-    image:
-      "https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400&h=300&fit=crop&crop=center",
-    tags: ["Cute", "Soft"],
-  },
-  {
-    title: "Undangan Graduation",
-    category: "Wisuda",
-    image:
-      "https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400&h=300&fit=crop&crop=center",
-    tags: ["Formal", "Celebratory"],
-  },
-  {
-    title: "Undangan Engagement",
-    category: "Pertunangan",
-    image:
-      "https://images.unsplash.com/photo-1519741497674-611481863552?w=400&h=300&fit=crop&crop=center",
-    tags: ["Romantic", "Elegant"],
+    tags: ["Profesional", "Berkelas"],
   },
 ];
 
@@ -64,7 +43,7 @@ export function PortfolioSection() {
           {portfolioItems.map((item, index) => (
             <Card
               key={index}
-              className="group overflow-hidden hover:shadow-lg transition-all duration-300"
+              className="group overflow-hidden hover:shadow-lg transition-all duration-300 py-0 gap-0"
             >
               <div className="aspect-[4/3] overflow-hidden">
                 <img
