@@ -2,6 +2,10 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Check, Star } from "lucide-react";
+import {
+  ScrollAnimation,
+  StaggeredAnimation,
+} from "@/components/scroll-animation";
 
 const plans = [
   {
@@ -60,16 +64,19 @@ export function PricingSection() {
   return (
     <section id="harga" className="py-20 bg-muted/30">
       <div className="container">
-        <div className="text-center space-y-4 mb-16">
+        <ScrollAnimation className="text-center space-y-4 mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-balance">
             Pilih Paket yang Tepat untuk Anda
           </h2>
           <p className="text-lg text-muted-foreground text-pretty max-w-2xl mx-auto">
             Mulai gratis dan upgrade kapan saja sesuai kebutuhan Anda
           </p>
-        </div>
+        </ScrollAnimation>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <StaggeredAnimation
+          className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto"
+          staggerDelay={0.15}
+        >
           {plans.map((plan, index) => (
             <Card
               key={index}
@@ -121,13 +128,13 @@ export function PricingSection() {
               </Button>
             </Card>
           ))}
-        </div>
+        </StaggeredAnimation>
 
-        <div className="text-center mt-12">
+        <ScrollAnimation delay={0.6} className="text-center mt-12">
           <p className="text-sm text-muted-foreground">
             Semua paket termasuk SSL gratis, backup otomatis, dan uptime 99.9%
           </p>
-        </div>
+        </ScrollAnimation>
       </div>
     </section>
   );

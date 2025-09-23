@@ -1,13 +1,17 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ArrowRight, Play, Star } from "lucide-react";
+import {
+  ScrollAnimation,
+  StaggeredAnimation,
+} from "@/components/scroll-animation";
 
 export function HeroSection() {
   return (
     <section className="relative py-20 lg:py-32 overflow-hidden">
       <div className="container">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-8">
+          <StaggeredAnimation className="space-y-8" staggerDelay={0.2}>
             <div className="space-y-4">
               <h1 className="text-4xl lg:text-6xl font-bold text-balance leading-tight">
                 Buat undangan digital yang{" "}
@@ -49,9 +53,9 @@ export function HeroSection() {
                 <span>4.9/5 dari 2,500+ pengguna</span>
               </div>
             </div>
-          </div>
+          </StaggeredAnimation>
 
-          <div className="relative">
+          <ScrollAnimation direction="right" delay={0.4} className="relative">
             <Card className="p-8 bg-primary/5 border-primary/20">
               <div className="space-y-6">
                 <div className="aspect-[4/3] bg-primary/10 rounded-lg flex items-center justify-center">
@@ -73,7 +77,7 @@ export function HeroSection() {
             <div className="absolute -top-4 -right-4 bg-accent text-accent-foreground px-3 py-1 rounded-full text-sm font-medium">
               ✨ Trending
             </div>
-          </div>
+          </ScrollAnimation>
         </div>
       </div>
     </section>
