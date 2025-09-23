@@ -37,7 +37,7 @@ export function Header() {
             FAQ
           </a>
           <a
-            href="#kontak"
+            href="#footer"
             className="text-sm font-medium hover:text-primary transition-colors"
           >
             Kontak

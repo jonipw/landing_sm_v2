@@ -10,7 +10,7 @@ import {
 
 export function Footer() {
   return (
-    <footer className="bg-card border-t">
+    <footer className="bg-card border-t" id="footer">
       <div className="container py-12">
         <div className="grid md:grid-cols-2 gap-8">
           <div className="space-y-4">
@@ -30,25 +30,25 @@ export function Footer() {
             </div>
           </div>
 
-          <div className="space-y-4 text-right">
+          <div className="space-y-4 text-left md:text-right">
             <h4 className="font-semibold">Kontak</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>
                 <a
                   href="mailto:bliputupro@gmail.com"
-                  className="hover:text-primary transition-colors flex items-center justify-end space-x-2"
+                  className="hover:text-primary transition-colors flex items-center justify-start md:justify-end space-x-2"
                 >
-                  <span>bliputupro@gmail.com</span>
                   <Mail className="h-4 w-4" />
+                  <span>bliputupro@gmail.com</span>
                 </a>
               </li>
               <li>
                 <a
                   href="https://wa.me/6285700000000"
-                  className="hover:text-primary transition-colors flex items-center justify-end space-x-2"
+                  className="hover:text-primary transition-colors flex items-center justify-start md:justify-end space-x-2"
                 >
-                  <span>0857xxxxxxxx</span>
                   <Phone className="h-4 w-4" />
+                  <span>0857xxxxxxxx</span>
                 </a>
               </li>
             </ul>

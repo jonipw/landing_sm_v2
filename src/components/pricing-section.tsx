@@ -27,7 +27,7 @@ const plans = [
     popular: false,
   },
   {
-    name: "Standar",
+    name: "Pro",
     price: "250",
     period: "3 bulan",
     description: "Untuk kebutuhan cepat, personal maupun bisnis",
@@ -43,7 +43,7 @@ const plans = [
       "Priority support",
       "Branding Sweet Memory",
     ],
-    cta: "Pilih Standar",
+    cta: "Pilih Pro",
     popular: true,
   },
   {

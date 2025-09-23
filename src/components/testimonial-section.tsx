@@ -10,7 +10,7 @@ const testimonials = [
     name: "Sarah Putri",
     role: "Pemilik Acara",
     image:
-      "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face",
+      "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&h=150&fit=crop&crop=face",
     content:
       "Undangan online ini sangat membantu pernikahan kami! Mudah disebarkan ke keluarga dan teman-teman. Tampilannya juga sangat elegan dan sesuai dengan tema pernikahan kami.",
     rating: 5,
@@ -21,7 +21,7 @@ const testimonials = [
     name: "Budi Santoso",
     role: "Mempelai Pria",
     image:
-      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
     content:
       "Undangan digital ini sangat praktis dan hemat budget! Tamu-tamu mudah konfirmasi kehadiran dan kami bisa tracking siapa saja yang sudah baca undangan. Desainnya juga premium banget!",
     rating: 5,
@@ -32,7 +32,7 @@ const testimonials = [
     name: "Maya Sari",
     role: "Pemilik Acara",
     image:
-      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face",
+      "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop&crop=face",
     content:
       "Fitur gallery foto dan video di undangan ini luar biasa! Tamu-tamu bisa melihat foto pre-wedding kami dan excited banget untuk datang ke acara. Terima kasih!",
     rating: 5,
